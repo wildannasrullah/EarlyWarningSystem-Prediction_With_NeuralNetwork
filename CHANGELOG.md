@@ -34,6 +34,7 @@
 - Card with switch
 - Card with accent (fixed without change the card border line)
 - Switches icon
+- Top menu toggle buttons have the same margin as the content on mobile and tablet
 
 
 # Backpack HTML Template v0.1.0
