@@ -121,6 +121,12 @@ The way this works is that:
 - design (CSS) changes should be done inside the ```src/scss``` directory; 
 - after you're happy with the changes you've made, you should run ```npm run build``` to compile the changes you've made inside the ```src``` folder to the ```dist``` folder, which includes the files people actually use in production;
 
+Process for the maintainer to publish a new version to NPM:
+- bump the package version inside ```package.json```;
+- commit the changes to git;
+- push the changes to the master branch;
+- ```npm publish```
+
 
 ## Support Development
 
