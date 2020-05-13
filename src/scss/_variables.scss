@@ -75,6 +75,8 @@ $light:         $gray-200 !default;
 $dark:          $black !default;
 
 $hover-color: rgba(124, 105, 239, 0.1);
+$border-color: rgba(0, 40, 100, 0.12);
+$muted-bg-color: rgba(0, 0, 0, 0.02);
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
