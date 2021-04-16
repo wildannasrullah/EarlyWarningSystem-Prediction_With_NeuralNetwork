@@ -17,15 +17,7 @@ Chart.defaults.global.pointHitDetectionRadius = 1;
 Chart.defaults.global.tooltips.enabled = false;
 Chart.defaults.global.tooltips.mode = 'index';
 Chart.defaults.global.tooltips.position = 'nearest';
-Chart.defaults.global.tooltips.custom = CustomTooltips;
-Chart.defaults.global.tooltips.intersect = true;
-
-Chart.defaults.global.tooltips.callbacks.labelColor = function (tooltipItem, chart) {
-  return {
-    backgroundColor: chart.data.datasets[tooltipItem.datasetIndex].borderColor
-  };
-}; // eslint-disable-next-line no-unused-vars
-
+Chart.defaults.global.tooltips.custom = CustomTooltips; // eslint-disable-next-line no-unused-vars
 
 var cardChart1 = new Chart($('#card-chart1'), {
   type: 'line',
@@ -82,7 +74,7 @@ var cardChart2 = new Chart($('#card-chart2'), {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
     datasets: [{
       label: 'My First dataset',
-      backgroundColor: getStyle('--success'),
+      backgroundColor: getStyle('--info'),
       borderColor: 'rgba(255,255,255,.55)',
       data: [1, 18, 9, 17, 34, 22, 11]
     }]
