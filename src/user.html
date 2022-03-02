@@ -1,0 +1,133 @@
+            <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard,CoreUI">
+    <title>e-Warning Dropout</title>
+    <!-- Icons-->
+    <link href="node_modules/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+    <link href="node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic" rel="stylesheet">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.7.0/css/buttons.bootstrap4.min.css">
+  </head>
+  <body class="app aside-menu-fixed sidebar-lg-show">
+    <iframe src="assets/design/header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    <div class="app-body">
+      <div class="sidebar sidebar-pills bg-transparent">
+        <iframe src="assets/design/menusamping.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+      </div>
+      <main class="main">
+        <!-- Breadcrumb-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">Master User</li>
+          <!-- Breadcrumb Menu-->
+          <li class="breadcrumb-menu d-md-down-none">
+            <div class="btn-group" role="group" aria-label="Button group"><a class="btn" href="#"><i class="icon-speech"></i></a><a class="btn" href="./"><i class="icon-graph"></i> Beranda</a><a class="btn" href="#"><i class="icon-settings"></i> Pengaturan</a></div>
+          </li>
+        </ol>
+        <div class="container-fluid">
+          <div class="animated fadeIn">
+            <div class="row">
+              
+              <!-- /.col-->
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                  <div class="card-header"><strong>Master User</strong></div>
+                  <div class="card-body">
+                    <form method="post" class="form-data" id="form-data">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="hf-email">Full Name</label>
+                        <div class="col-md-9">
+                          <input class="form-control" type="text" name="fullname" id="fullname" placeholder="Enter Email.."><span class="help-block">Please enter your fullname</span>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="hf-email">User Name</label>
+                        <div class="col-md-9">
+                          <input class="form-control" type="text" id="username" name="username" placeholder="Enter Email.."><span class="help-block">Please enter your username</span>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="hf-password">Password</label>
+                        <div class="col-md-9">
+                          <input class="form-control" type="password" name="password" id="password" placeholder="Enter Password.."><span class="help-block">Please enter your password</span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="card-footer">
+                    <button type="button" name="simpan" id="simpan" class="btn btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                    <button class="btn btn-sm btn-danger" type="reset"><i class="fa fa-ban"></i> Reset</button>
+                  </div>
+                </div>
+              </div>
+              </div></div></div>
+            <iframe src="assets/design/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+
+    <!-- <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe> -->
+    <!-- CoreUI and necessary plugins-->
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/pace-progress/pace.min.js"></script>
+    <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+    <script src="node_modules/pnotify/dist/iife/Pnotify.js"></script>
+    <script src="node_modules/pnotify/dist/iife/PnotifyButtons.js"></script>
+    <script src="node_modules/pnotify/dist/iife/PnotifyConfirm.js"></script>
+    <script src="node_modules/pnotify/dist/iife/PnotifyMobile.js"></script>
+    <script src="node_modules/pnotify/dist/iife/PnotifyNonBlock.js"></script>
+    <script>
+      PNotify.defaults.styling = 'bootstrap4';
+    </script>
+    <!-- Plugins and scripts required by this view-->
+    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+    //Mengirimkan Token Keamanan
+    $.ajaxSetup({
+        headers : {
+            'Csrf-Token': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+ 
+    $("#simpan").click(function(){
+        var data = $('.form-data').serialize();
+        var jenkel1 = document.getElementById("fullname").value;
+        var jenkel2 = document.getElementById("username").value;
+        var nama_mahasiswa = document.getElementById("password").value;
+ 
+ 
+          $.ajax({
+              type: 'POST',
+              url: "form_action.php",
+              data: data,
+              success: function() {
+                  document.getElementById("id").value = "";
+                  document.getElementById("form-data").reset();
+              }, error: function(response){
+            console.log(response.responseText);
+          }
+          });
+    });
+});
+</script>
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard,CoreUI">
+    <title>e-Warning Dropout</title>
+    <!-- Icons-->
+    <link href="vendors/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+    <link href="vendors/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendors/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic" rel="stylesheet">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+  </head>
+  <body class="app aside-menu-fixed sidebar-lg-show">
+    <iframe src="assets/design/header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    <div class="app-body">
+      <div class="sidebar sidebar-pills bg-transparent">
+        <iframe src="assets/design/menusamping.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+      </div>
+      <main class="main">
+        <!-- Breadcrumb-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">Prediksi Individu</li>
+          <!-- Breadcrumb Menu-->
+          <li class="breadcrumb-menu d-md-down-none">
+            <div class="btn-group" role="group" aria-label="Button group"><a class="btn" href="#"><i class="icon-speech"></i></a><a class="btn" href="./"><i class="icon-graph"></i> Beranda</a><a class="btn" href="#"><i class="icon-settings"></i> Pengaturan</a></div>
+          </li>
+        </ol>
+        <div class="container-fluid">
+          <div class="animated fadeIn">
+            <div class="row">
+              
+              <!-- /.col-->
+            </div>
+            <!-- /.row-->
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+              <div class="col-md-8">
+                <div class="card">
+                  <div class="card-header"><strong>Form Prediksi Individu</strong></div>
+                  <div class="card-body">
+                    <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="text-input">NIM Mahasiswa</label>
+                        <div class="col-md-9">
+                          <input class="form-control" type="text" name="text-input" id="nim_mhs"  placeholder="NIM Mahasiswa">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="email-input">Nilai IP Kumulatif</label>
+                        <div class="col-md-9">
+                          <input class="form-control" id="nilai_ipk" type="text" name="nilai_ipk" placeholder="Masukan Nilai IPK Mahasiswa tersebut"><span class="help-block">Gunakan tanda titik (.) sebagai simbol koma. Mis: 3.97</span>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="password-input">Nilai IP Semester Saat Ini</label>
+                        <div class="col-md-9">
+                         <input class="form-control" id="nilai_ips" type="text" name="nilai_ips" placeholder="Masukan Nilai IP Semester Mahasiswa tersebut"><span class="help-block">Gunakan tanda titik (.) sebagai simbol koma. Mis: 3.97</span>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="date-input">SKS yang sudah Lulus</label>
+                        <div class="col-md-9">
+                          <input class="form-control" id="sks_lulus" type="number" min="1" name="sks_lulus" placeholder="Masukan Jumlah SKS yang lulus">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="select1">Status Pembayaran Uang Kuliah</label>
+                        <div class="col-md-9">
+                          <select class="form-control" id="select1" name="select1">
+                            <option value="">---Pilih Status---</option>
+                            <option value="0">Lunas</option>
+                            <option value="1">Angsur</option>
+                            <option value="2">Menunggak</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="text-input">Nilai Tes Masuk</label>
+                        <div class="col-md-9">
+                          <input class="form-control" id="nilai_tes" type="number" name="nilai_tes" id="nim_mhs"  placeholder="Masukan Nilai Tes Masuk">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="text-input">Semester Saat Ini</label>
+                        <div class="col-md-9">
+                          <input class="form-control" id="semester" type="number" name="semester" id="nim_mhs"  placeholder="Masukan Semester Saat ini"><span class="help-block">Mis: 20211 (Tahun 2021 Semester Ganjil)</span>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="select1">Status Bekerja</label>
+                        <div class="col-md-9">
+                          <select class="form-control" id="select1" name="select1">
+                            <option value="">---Pilih Status---</option>
+                            <option value="0">Tidak Bekerja</option>
+                            <option value="1">Bekerja</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="text-input">Jumlah Absen</label>
+                        <div class="col-md-9">
+                          <input class="form-control" id="absen" type="number" name="absen" id="nim_mhs"  placeholder="Masukan Semester Saat ini"><span class="help-block">Jumlah tidak hadir dalam perkuliahan dalam 1 semester</span>
+                        </div>
+                      </div>
+                      
+                    </form>
+                  </div>
+                  <div class="card-footer" style="text-align: right;">
+                    <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-dot-circle-o"></i> Prediksi</button>
+                    <button class="btn btn-sm btn-danger" type="reset"><i class="fa fa-ban"></i> Reset</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                  <div class="card-header"><strong>Hasil Prediksi</strong></div>
+                  <div class="card-body">
+                    <form class="form-horizontal" action="" method="post">
+                      <div class="form-group row">
+                        <div class="col-sm-12">
+                          <label class="col-md-3 col-form-label" id="hasil_prediksi" for="text-input"></label>
+                        </div>
+                      </div>
+                      
+                    </form>
+                  </div>
+              </div>
+              <!-- /.col-->
+            </div>
+            </div>
+            <!-- /.card-->
+              <!-- /.col-->
+            </div>
+            <!-- /.row-->
+           
+          </div>
+        </div>
+      </main>
+    </div>
+    <iframe src="assets/design/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+
+    <!-- <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe> -->
+    <!-- CoreUI and necessary plugins-->
+    <script src="vendors/jquery/js/jquery.min.js"></script>
+    <script src="vendors/popper.js/js/popper.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendors/pace-progress/js/pace.min.js"></script>
+    <script src="vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
+    <script src="vendors/@coreui/coreui/js/coreui.min.js"></script>
+    <script src="vendors/pnotify/js/Pnotify.js"></script>
+    <script src="vendors/pnotify/js/PnotifyButtons.js"></script>
+    <script src="vendors/pnotify/js/PnotifyConfirm.js"></script>
+    <script src="vendors/pnotify/js/PnotifyMobile.js"></script>
+    <script src="vendors/pnotify/js/PnotifyNonBlock.js"></script>
+    <script>
+      PNotify.defaults.styling = 'bootstrap4';
+    </script>
+    <!-- Plugins and scripts required by this view-->
+    <script src="vendors/chart.js/js/Chart.min.js"></script>
+    <script src="vendors/@coreui/coreui-plugin-chartjs-custom-tooltips/js/custom-tooltips.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
